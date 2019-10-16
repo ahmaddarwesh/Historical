@@ -1,11 +1,12 @@
 package com.superdar.historical
 
-import com.google.firebase.firestore.IgnoreExtraProperties
+import androidx.annotation.Keep
 
 
 data class Type(var id: Int, var name: String, var pic: Int)
 
-@IgnoreExtraProperties
+
+@Keep
 data class PersonModel(
         var ID: String,
         var Name: String,
