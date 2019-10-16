@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "83046000111",
+    "firebase_url": "https://historical-efd93.firebaseio.com",
+    "project_id": "historical-efd93",
+    "storage_bucket": "historical-efd93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83046000111:android:8de4585fe939fa05",
+        "android_client_info": {
+          "package_name": "com.superdar.historical"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83046000111-bhvil454u64c5bg1ckd2ua9agtor2mme.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.superdar.historical",
+            "certificate_hash": "ed73645c8b4d241356b83435ef6255338b8679e8"
+          }
+        },
+        {
+          "client_id": "83046000111-pf9vrh52j25m5gmoda8dvglmgmflo0n5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.superdar.historical",
+            "certificate_hash": "d1fa3f52c97a043408bdc1550c0f6e09d62eb1e9"
+          }
+        },
+        {
+          "client_id": "83046000111-2gaevhqi6t7s2k01rmijj3smua15lpa2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-nrJeeCx-GlX6jWZEPbiHGL3Z7M2t3H4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83046000111-2gaevhqi6t7s2k01rmijj3smua15lpa2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

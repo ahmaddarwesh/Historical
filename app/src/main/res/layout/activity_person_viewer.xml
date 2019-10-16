@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PersonViewer">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cons_viewer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/adView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+                android:id="@+id/img_viwer"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/user_defult_pic" />
+
+        <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="@dimen/_170sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginTop="2dp"
+                android:gravity="right"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/name_viewer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:fontFamily="@font/jaz_bold"
+                        android:text="...."
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/jaz_reg"
+                        android:text="الإسم:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/natio_viewer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="2dp"
+                        android:fontFamily="@font/jaz_bold"
+                        android:text="....."
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/jaz_reg"
+                        android:text="الجنسية:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/porn_viwer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/jaz_bold"
+                        android:text="..."
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/jaz_reg"
+                        android:text="الولادة:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/death_viwer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/jaz_bold"
+                        android:text="..."
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:fontFamily="@font/jaz_reg"
+                        android:text="الوفاة:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+                android:id="@+id/sv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:padding="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/desc_viwer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jaz_reg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="جار تحميل البيانات..."
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avl"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:visibility="visible"
+            app:indicatorColor="#000000"
+            app:indicatorName="BallScaleIndicator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+            android:id="@+id/adView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-7749815556108724/8700645197"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
