@@ -32,10 +32,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         auth = FirebaseAuth.getInstance()
 
-        FirebaseApp.initializeApp(this)
-        MobileAds.initialize(this, "ca-app-pub-7749815556108724~1871512962")
-        val adReq = AdRequest.Builder().build()
-        adView.loadAd(adReq)
+        try {
+            FirebaseApp.initializeApp(this)
+            MobileAds.initialize(this, "ca-app-pub-7749815556108724~1871512962")
+            val adReq = AdRequest.Builder().build()
+            adView.loadAd(adReq)
+        } catch (e: Exception) {
+            Log.d("FIEELDS0","Error ${e.message}")
+        }
+
 
         SignUp()
         initData()
@@ -61,7 +66,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun configView() {
-        recycllerTypes.layoutManager = LinearLayoutManager(this, LinearLayout.VERTICAL, false)
+        recycllerTypes.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         recycllerTypes.adapter = adapter(this, MyList)
     }
 
@@ -89,6 +94,7 @@ class MainActivity : AppCompatActivity() {
             holder.name.text = list[position].name
             Glide.with(conx)
                 .load(list[position].pic)
+                .placeholder(R.drawable.a10)
                 .into(holder.image)
 
             holder.cardView.setOnClickListener {

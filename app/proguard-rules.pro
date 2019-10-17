@@ -23,6 +23,7 @@
 #-keepattributes SourceFile,LineNumberTable
 -keepattributes *Annotation*
 -keepattributes Signature
+-keepattributes InnerClasses
 #-keep class com.superdar.historical.models {*;}
 -ignorewarnings
 
@@ -36,7 +37,7 @@
 #-keepattributes Signature
 #-keep class com.wang.avi.** { *; }
 #-keep class com.wang.avi.indicators.** { *; }
-#-keep class com.firebase.** { *; }
+-keep class com.firebase.** { *; }
 
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
